@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/client.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+        function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+ <header>
+     <a href="https://www.charlesyuauthor.com/"><img src="images/Picture%202%20-%20Interior%20Chinatown%20Logo.jpg"></a>
+        Interior Chinatown: Critical Casebook</header>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="charles.html">About Charles Yu</a>
+  <a href="contributors.html">Contributors</a>
+  <a href="critcal.html">Abstracts</a>
+<div class="dropdown">
+  <button class=dropbtn>Additional Context</button>
+  <div class="dropdown-content">
+    <a href="Additional.html">Additional Context</a>
+    <a href="asians.html">Asians in America</a>
+    <a href="asians2.html">Asians in Hollywood</a>
+  </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</div>
+    
+    <section>
+        <p>Welcome to our critical casebook on Charles Yu’s novel Interior Chinatown. This casebook was crafted by Millikin University students enrolled in Dr. Tony R. Magagna’s English 202: Writing About Literature course during the Spring 2023 semester. Although Interior Chinatwon has enjoyed incredible critical acclaim since its publication in 2020, including winning the <a href="https://www.nationalbook.org/awards-prizes/national-book-awards-2020/">National Book Award in Fiction</a>, there has been very little published scholarship dedicated to the novel. Thus, the students whose work is collected here have put together this casebook both to build on the academic conversation about the work, and to showcase their own original critical contributions to the field of literary scholarship. By exploring this website, we hope that you will learn more about Yu’s incredible novel and the various themes that it explores.</p>
+    <p>In addition to the in-depth academic analyses presented here, you will also find contextual information that we feel is useful to understanding and appreciating Interior Chinatown. All the resources, information, and scholarship presented in this casebook have been generated and curated by the English 202 students themselves. Interior Chinatown: Critical Casebook takes its proud place among several <a href="http://casebooks.millikinenglish.org/">other casebooks produced by students in Millikin University’s English department.</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Millikin University</p>
+    </footer>
+</body>
+</html>
